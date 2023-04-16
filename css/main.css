@@ -1,0 +1,104 @@
+/* css 파일 작성할 때 기본으로 깔고 들어갈 속성 */
+body{
+    margin: 0px;
+}
+
+div, input, textarea{
+    box-sizing: border-box;
+}
+
+.big-box
+{
+    height: 300px;
+    background: blueviolet;
+    display: flex;
+}
+
+.text-wrapper
+{
+    width: 40%; 
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.img-wrapper
+{
+    margin-left: 230px;
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+.img-wrapper img
+{
+    width: 250px;
+    height: 300px;
+    
+}
+
+.btn{
+    height: 30px;
+    background: darkgrey;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+.big-box2{
+    height: 200px;
+    text-align: center;
+    padding: 15px;
+}
+
+.big-box3{
+    text-align: center;
+    background-color: cornflowerblue;
+    color: white;
+    padding: 10px;
+}
+.icon-box{
+    display: flex;
+    margin-left: 300px;
+}
+
+.icon-box p:nth-child(3)
+{
+    font-size: x-small;
+    padding: 15px;
+} 
+
+i{
+    background-color: white;
+    width: 70px;
+    height: 70px;
+    padding-top: 25px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    color: cornflowerblue;
+    font-size: x-large;
+}
+
+.big-box4
+{
+    text-align: center;
+}
+
+.big-box5 img
+{
+    width: 450px;
+    height: 300px;
+}
+
+.wrapper2{
+    display: flex;
+    margin-left: 150px;
+}
+
+.img-wrapper2
+{
+    position: relative;
+}
+.text-wrapper2
+{
+    position: absolute;
+}
