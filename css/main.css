@@ -1,4 +1,5 @@
 /* css 파일 작성할 때 기본으로 깔고 들어갈 속성 */
+
 body{
     margin: 0px;
 }
@@ -7,10 +8,12 @@ div, input, textarea{
     box-sizing: border-box;
 }
 
+/* css 파일 작성할 때 기본으로 깔고 들어갈 속성 */
+
 .big-box
 {
     height: 300px;
-    background: blueviolet;
+    background-image: linear-gradient(to bottom,#499add, #4e61c0  );
     display: flex;
 }
 
@@ -25,7 +28,7 @@ div, input, textarea{
 {
     margin-left: 230px;
     margin-top: 50px;
-    overflow: hidden;
+     overflow: hidden; 
 }
 
 .img-wrapper img
@@ -44,6 +47,11 @@ div, input, textarea{
     color: white;
 }
 
+.btn:hover{
+    background: black;
+    transition: all 1s;
+}
+
 .big-box2{
     height: 200px;
     text-align: center;
@@ -52,7 +60,7 @@ div, input, textarea{
 
 .big-box3{
     text-align: center;
-    background-color: cornflowerblue;
+    background-color: #4e61c0;
     color: white;
     padding: 10px;
 }
@@ -74,31 +82,119 @@ i{
     padding-top: 25px;
     border-radius: 50px;
     box-sizing: border-box;
-    color: cornflowerblue;
+    color: #4e61c0;
     font-size: x-large;
 }
 
-.big-box4
-{
+.portfolio {
+    padding-top: 60px;
+    padding-bottom: 60px;
     text-align: center;
-}
-
-.big-box5 img
-{
-    width: 450px;
-    height: 300px;
-}
-
-.wrapper2{
-    display: flex;
-    margin-left: 150px;
-}
-
-.img-wrapper2
-{
+  }
+  .portfolio-item1 {
+    float: left;
+    width: 50%;
+    height: 350px;
+    background-image: url(/img/portfolio-1.jpg);
+    background-size: cover;
     position: relative;
-}
-.text-wrapper2
-{
+  }
+  .portfolio-item2 {
+    float: left;
+    width: 50%;
+    height: 350px;
+    background-image: url(/img/portfolio-2.jpg);
+    background-size: cover;
+    position: relative;
+  }
+  .portfolio-item3 {
+    float: left;
+    width: 50%;
+    height: 350px;
+    background-image: url(/img/portfolio-3.jpg);
+    background-size: cover;
+    position: relative;
+  }
+  .portfolio-item4 {
+    float: left;
+    width: 50%;
+    height: 350px;
+    background-image: url(/img/portfolio-4.jpg);
+    background-size: cover;
+    position: relative;
+  }
+  
+  .portfolio-container {
+    text-align: left;
+    max-width: 1200px;
+    margin: auto;
+  }
+  .portfolio-text {
+    z-index: 1;
+    color: white;
+    padding: 50px;
+    width: 100%;
+  } 
+
+  /* portfolio 부분 mouse hover 시 흰색 border 애니메이션 */
+  .white-box{
     position: absolute;
+    width: 100%;
+    height: 100%;
+    /* 텍스트가 보여야 하니 우선순의 2번째 */
+    z-index: 2;
+    border: 0px solid white;
+  }
+
+  .white-box:hover{
+    border: 20px solid white;
+    transition: all 1s;
+  }
+
+
+/* media query 사용하기 
+   pc, 테블릿, 모바일 에 따라 화명 구성 다르게*/
+
+@media screen and (max-width: 576px){
+    .big-box{
+        height: auto;
+        flex-direction: column;
+    }   
+    .text-wrapper
+    {
+        margin: auto;
+        text-align: center;
+    }
+    .img-wrapper
+    {
+        margin: auto;
+        margin-top: 15px;
+        height: 250px;
+        overflow: hidden;
+    }
+    
+    .icon-box
+    {
+        flex-direction: column;
+         margin:0 auto;    
+    }
+
+     .portfolio-item1{
+        float: none;
+        width: 100%;
+    }
+    
+    .portfolio-item2{
+        float: none;
+        width: 100%;
+    }
+    .portfolio-item3{
+        float: none;
+        width: 100%;
+    }
+    .portfolio-item4{
+        float: none;
+        width: 100%;
+    }
+
 }
